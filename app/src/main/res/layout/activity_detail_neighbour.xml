@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:contentDescription="photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/arrow_back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/photo" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/favoriteButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/grey"
+        app:fabCustomSize="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/viewWhite1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo" />
+
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:gravity="center"
+        android:text="FirstName"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/photo"
+        app:layout_constraintEnd_toEndOf="@+id/photo"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="@+id/photo"
+        app:layout_constraintTop_toTopOf="@+id/photo"
+        app:layout_constraintVertical_bias="0.944" />
+
+    <View
+        android:id="@+id/viewWhite1"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo" />
+
+
+    <TextView
+        android:id="@+id/firstNameInViewWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="FirstName"
+        android:textSize="25sp"
+        android:paddingLeft="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/separator1"
+
+        app:layout_constraintStart_toStartOf="@+id/viewWhite1"
+        app:layout_constraintTop_toTopOf="@+id/viewWhite1"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <View
+        android:id="@+id/separator1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/viewWhite1"
+        app:layout_constraintEnd_toEndOf="@+id/viewWhite1"
+        app:layout_constraintStart_toStartOf="@+id/viewWhite1"
+        app:layout_constraintTop_toTopOf="@+id/viewWhite1"
+        app:layout_constraintVertical_bias="0.282" />
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:drawableStart="@drawable/location"
+        android:paddingLeft="8dp"
+        android:text="address"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/viewWhite1"
+        app:layout_constraintTop_toBottomOf="@+id/separator1" />
+
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/phone"
+        android:paddingLeft="8dp"
+        android:text="phone"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/viewWhite1"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+
+    <TextView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/website"
+        android:paddingLeft="8dp"
+        android:text="facebook"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewWhite1"
+        app:layout_constraintStart_toStartOf="@+id/viewWhite1"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/viewWhite2"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/round_shape"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewWhite1" />
+
+    <TextView
+        android:id="@+id/aboutMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="A propos de moi"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/separator2"
+        app:layout_constraintEnd_toEndOf="@+id/viewWhite2"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="@+id/viewWhite2"
+        app:layout_constraintTop_toTopOf="@+id/viewWhite2"
+        app:layout_constraintVertical_bias="0.562"/>
+
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/viewWhite2"
+        app:layout_constraintEnd_toEndOf="@+id/viewWhite2"
+        app:layout_constraintStart_toStartOf="@+id/viewWhite2"
+        app:layout_constraintTop_toTopOf="@+id/viewWhite2"
+        app:layout_constraintVertical_bias="0.282"
+        app:layout_constraintHorizontal_bias="0.088"/>
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu enim dolor. Curabitur suscipit convallis ex eget commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewWhite2"
+        app:layout_constraintEnd_toEndOf="@+id/viewWhite2"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/viewWhite2"
+        app:layout_constraintTop_toBottomOf="@+id/separator2"
+        app:layout_constraintVertical_bias="0.057" />
+
+
+</android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
