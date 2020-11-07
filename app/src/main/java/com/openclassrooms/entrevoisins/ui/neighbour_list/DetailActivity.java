@@ -29,7 +29,7 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_neighbour);
 
-        Long id = getIntent().getLongExtra("id", -1);
+        Long id = getIntent().getLongExtra("id", 999);
         String name = getIntent().getStringExtra("name");
         String address = getIntent().getStringExtra("address");
         String phoneNumber = getIntent().getStringExtra("phoneNumber");
