@@ -50,14 +50,14 @@ public class MyNeighbourRecyclerViewAdapter extends RecyclerView.Adapter<MyNeigh
 
         //mise en place d'un clickListener pour chaque item
         holder.itemView.setOnClickListener(v -> {
-            Intent myIntent = new Intent(v.getContext(), DetailActivity.class);                            //création d'un intent
+            Intent myIntent = new Intent(v.getContext(), DetailActivity.class);
             myIntent.putExtra("id", neighbour.getId());
-            myIntent.putExtra("aboutMe", neighbour.getAboutMe());                             //passage d’informations
+            myIntent.putExtra("aboutMe", neighbour.getAboutMe());
             myIntent.putExtra("address", neighbour.getAddress());
             myIntent.putExtra("name", neighbour.getName());
             myIntent.putExtra("avatarUrl", neighbour.getAvatarUrl());
             myIntent.putExtra("phoneNumber", neighbour.getPhoneNumber());
-            v.getContext().startActivity(myIntent);                                                        //startActivity à partir du contexte récupéré
+            v.getContext().startActivity(myIntent);
         });
 
 

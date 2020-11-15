@@ -20,7 +20,7 @@ public class ListNeighbourPagerAdapter extends FragmentPagerAdapter {
      */
     @Override
     public Fragment getItem(int position) {
-        return NeighbourFragment.newInstance(position);             //passage de la position tab pour gérer une instancicition différente du RV dans le fragment en fct de la position de tab
+        return NeighbourFragment.newInstance(position);             //passage de la position tab pour gérer une instance différente du RV dans le fragment en fct de la position de tab
     }
 
     /**

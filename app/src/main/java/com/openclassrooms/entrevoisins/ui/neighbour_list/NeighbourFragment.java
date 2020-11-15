@@ -71,7 +71,7 @@ public class NeighbourFragment extends Fragment {
     private void initList() {
         mNeighbours = mApiService.getNeighbours();
         favoritesNeighbours = mApiService.getFavoritesNeighbours();
-        if(positionTab == 1) {                                                                              //affichage du bon RV en fct de tab
+        if(positionTab == 1) {
             mRecyclerView.setAdapter(new MyNeighbourRecyclerViewAdapter(favoritesNeighbours));
         }else{
             mRecyclerView.setAdapter(new MyNeighbourRecyclerViewAdapter(mNeighbours));

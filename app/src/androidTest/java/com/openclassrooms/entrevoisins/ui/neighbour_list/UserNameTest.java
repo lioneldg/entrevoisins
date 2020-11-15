@@ -36,7 +36,7 @@ public class UserNameTest {
 
     @Before
     public void setup() {
-        service = DI.getNewInstanceApiService();
+        service = DI.getNeighbourApiService();
         textName = service.getNeighbours().get(2).getName();
     }
 

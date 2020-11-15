@@ -45,7 +45,7 @@ public class FavoriteTest {
 
     @Before
     public void setup() {
-        service = DI.getNewInstanceApiService();
+        service = DI.getNeighbourApiService();
     }
 
     @Rule

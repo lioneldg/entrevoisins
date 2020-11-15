@@ -40,7 +40,7 @@ public class DeleteTest {
 
     @Before
     public void setup() {
-        service = DI.getNewInstanceApiService();
+        service = DI.getNeighbourApiService();
         initialNbrOfNeighbours = service.getNeighbours().size();
     }
 
